@@ -1,2 +1,2 @@
-  npm install
-  coffee tentacl.coffee
+   npm install
+   coffee tentacl.coffee

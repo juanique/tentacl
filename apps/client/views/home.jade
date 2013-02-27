@@ -1,0 +1,17 @@
+doctype 5
+html(lang="en")
+  head
+    link(rel="stylesheet", href="/codemirror/codemirror.css")
+    != css('tentacl')
+    != css('main')
+  body
+    script(src="/codemirror/codemirror.js")
+    script(src="/codemirror/keymap/vim.js")
+    script(src="/codemirror/mode/javascript/javascript.js")
+    script(src="http://code.jquery.com/jquery-1.9.1.min.js")
+    script(src="/underscore-min.js")
+    script(src="/backbone-min.js")
+    != js('tentacl')
+    != js('main')
+
+    div#TentaclContent

@@ -1,0 +1,33 @@
+doctype 5
+html(lang="en")
+  head
+    link(rel="stylesheet", href="/codemirror/codemirror.css")
+    != css('tentacl')
+
+    // Testing
+    link(rel="stylesheet", href="/jasmine/jasmine.css")
+    != css('test')
+  body
+    script(src="/codemirror/codemirror.js")
+    script(src="/codemirror/keymap/vim.js")
+    script(src="/codemirror/mode/javascript/javascript.js")
+    script(src="/jquery.js")
+    script(src="/underscore-min.js")
+    script(src="/backbone-min.js")
+    != js('tentacl')
+    != js('test-main')
+
+    div#TestArea
+
+    // Testing
+    script(src="/jasmine/jasmine.js")
+    script(src="/jasmine/jasmine-html.js")
+    script(src="/jasmine/matchers/toBe.js")
+    script(src="/jasmine/matchers/toHave.js")
+    script(src="/jasmine/matchers/toContain.js")
+    script(src="/jasmine/matchers/toStartEndWith.js")
+    script(src="/jasmine/matchers/toThrow.js")
+    != js('matchers')
+    != js('test-tentacl')
+
+    div#HTMLReporter

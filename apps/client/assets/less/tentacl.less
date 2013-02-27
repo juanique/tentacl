@@ -1,0 +1,39 @@
+@medium-gray: #AAA;
+
+.shadowBorderTop (@color: black){
+  box-shadow: 0 -1px 0px @color;
+}
+
+.tentacl-layout-pane.tentacl-horizontal > div {
+  // display: inline-block;
+  float: left;
+  vertical-align: top;
+}
+
+.tentacl-vertical > .tentacl-layout-pane {
+  .shadowBorderTop(@medium-gray)
+}
+
+.tentacl-vertical > .tentacl-layout-pane:first-child {
+  box-shadow: none;
+}
+
+.tentacl-content-pane textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.tentacl-main-pane {
+  height: 100%;
+  width: 100%;
+  // border: 1px solid @medium-gray
+}
+
+div.CodeMirror {
+  height: 100%;
+
+  div.CodeMirror-hscrollbar {
+    display: none;
+  }
+}
+
